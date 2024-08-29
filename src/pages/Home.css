@@ -1,0 +1,46 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: visible; /* You can try hidden or auto if visible doesn't work */
+    position: relative;
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center the element */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Adjust width as needed */
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 850px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .images-container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust height if needed */
+  }
+  
+  .image-container {
+    flex: 1; /* Each image takes 50% of the screen width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto; /* Maintains image aspect ratio */
+    object-fit: cover; /* Ensures image covers container without distortion */
+  }
+  
